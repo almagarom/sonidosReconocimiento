@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>Aplicación Web - Identificador de sonido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <!--C106-->
+    <!--PAra crear los encabezados de la pagina, se crea el div-->
+    <!--col-xs-12 para que ocupe el 100% del ancho de la pantalla-->
+    <!--text-center: para alinear el texto al centro de la pantalla-->
+    <div class="col-xs-12 header_div text-center">
+      <!--para el titulo-->
+      <h2>Aliens controlados por sonido</h2>     
+      <!--para que tenga otro tipo de letra-->
+      <p>Nota: Haz diferentes sonidos como aplausos, chasquidos o campanas para hacer bailar a los aliens</p>     
+    </div>
+
+    <!--div para los botones y las imagenes-->
+    <div class="main_div">
+      <!--center para que todo esté alineado al centro-->
+      <center>
+      <br>
+        <!--agregamos un boton con la funcion onclick-->
+      <button id="bot" class="btn btn-warning" onclick="startClassification();"> COMENZAR </button>
+      <h3 id="result_label">Escucho:  </h3>
+      <h4 id="result_confidence">Precisión:  </h4>
+        <br>
+        <img src="aliens-01.png" id="alien1" width="300" height="300">
+        <img src="aliens-02.png" id="alien2" width="300" height="300">
+        <img src="aliens-03.png" id="alien3" width="300" height="300">
+        <img src="aliens-04.png" id="alien4" width="300" height="300">
+      </center>
+      </div>
+      <div class="copy_right_footer">
+        Creado por el equipo de Byjus Future School
+      </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
